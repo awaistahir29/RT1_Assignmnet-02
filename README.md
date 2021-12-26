@@ -33,7 +33,7 @@ rosrun second_assignment robotController_node
 ```
 rosrun second_assignment server_node
 ```
-##### Seccondly, you need to run the User node which takes input from the user and send the request to the server node and waiting for the response from the server node.
+##### Finally, you need to run the User node which takes input from the user and send the request to the server node and waiting for the response from the server node.
 ```
 rosrun second_assignment user_node
 ```
