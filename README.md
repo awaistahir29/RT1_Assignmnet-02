@@ -37,3 +37,24 @@ rosrun second_assignment server_node
 ```
 rosrun second_assignment user_node
 ```
+# Simulation
+<p align="center">
+  
+ ## Nodes and their logic
+
+_Here I will explain each node code and tasks, to have a deeper description of the code, check the comments inside of it._
+
+### stageros node (stage_ros package)
+
+The stageros node wraps the Stage 2-D multi-robot simulator, via libstage. Stage simulates a world as defined in a .world file. This file tells stage everything about the world, from obstacles (usually represented via a bitmap to be used as a kind of background), to robots and other objects.
+The nodes has the following aspects:
+- Subscriptions
+  - The node subscribes to the `cmd_vel (geometry_msgs/Twist)` topic, to manage the velocity of the robot.
+- Publishing
+    - `odom (nav_msgs/Odometry)`: odometry data of the model. 
+    - `base_scan (sensor_msgs/LaserScan)`: __scans from the laser model. We will use this one.__
+    - `base_pose_ground_truth (nav_msgs/Odometry)`: __the ground truth pose. We will use this one.__
+    - `image (sensor_msgs/Image)`: visual camera image.
+    - `depth (sensor_msgs/Image)`: depth camera image.
+    - `camera_info (sensor_msgs/CameraInfo)`: camera calibration info.
+  
