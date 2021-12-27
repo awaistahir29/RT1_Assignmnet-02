@@ -58,3 +58,9 @@ The nodes has the following aspects:
     - `depth (sensor_msgs/Image)`: depth camera image.
     - `camera_info (sensor_msgs/CameraInfo)`: camera calibration info.
   
+  ### robotController node (second_assignment package)
+  ### server node (second_assignment package)
+  ### User node (second_assignment package)
+  
+  ## Conclusion and possible improvements
+  `rosrun rqt_graph rqt_graph`
