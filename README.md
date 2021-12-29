@@ -38,6 +38,7 @@ rosrun second_assignment server_node
 rosrun second_assignment user_node
 ```
 # Simulation
+The simulation here shows the movemnet of the robot in the environment.
 ![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/44ce0d3fd726b67dbfe3c908d5089f6c87baa1f4/simulations/Robot_Simulation.png) 
   
 ## Nodes and their logic
