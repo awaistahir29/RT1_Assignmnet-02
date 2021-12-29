@@ -38,7 +38,7 @@ rosrun second_assignment server_node
 rosrun second_assignment user_node
 ```
 # Simulation
-![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/44ce0d3fd726b67dbfe3c908d5089f6c87baa1f4/simulations/Robot_Simulation.png)
+![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/44ce0d3fd726b67dbfe3c908d5089f6c87baa1f4/simulations/Robot_Simulation.png) 
   
 ## Nodes and their logic
 
@@ -98,6 +98,7 @@ This is the server node which takes the user request and send the response accor
 	
   ### User node (second_assignment package)
 This is the user interface node which talks with the user to input the command and give the response to the user node.
+For further details, please see the comments inside the code
 
 
 ```cpp
@@ -164,3 +165,4 @@ int main (int argc, char **argv)
   `rosrun rqt_graph rqt_graph`
 However, this is the first assignmnet that has been done by me on the ROS framework and I'm well aware of the ROS functionalities. Still, lots of improvements can be done. 
 - Firstly, The movement of the robot in the environment can be improved by developing more effective logic because the robot is facing a bit trouble while turning and search a lot. 
+- Secondly, The movemnet of the robot can be improved by further subdivision of the laser ranges like frontleft and front right. I tried to do that;however, in a few cases it started moving in the opposite direction while turning. Overall, The movemnet can be improved by implementing the logic in more effective way.
