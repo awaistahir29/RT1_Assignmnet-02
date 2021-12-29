@@ -57,7 +57,7 @@ The nodes has the following aspects:
     - `image (sensor_msgs/Image)`: visual camera image.
     - `depth (sensor_msgs/Image)`: depth camera image.
     - `camera_info (sensor_msgs/CameraInfo)`: camera calibration info.
-![]()
+![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/stageRosConfig.png)
   
   ### robotController node (second_assignment package)
   The robotContrioller node has two main tasks, the first is to move the robot inside the enviroment and second changes the velocity of the robot. These tasks are completed with the callback function and the main of the node. The `main()` initialise the node with the init() function and subscribes to different topics.
@@ -98,8 +98,7 @@ This is the server node which takes the user request and send the response accor
 	
   ### User node (second_assignment package)
 This is the user interface node which talks with the user to input the command and give the response to the user node.
-	
-	
+
 
 ```cpp
 	
@@ -157,5 +156,8 @@ int main (int argc, char **argv)
 	return 0;
 }
 ```	
+![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/userInterfaceConfig.png)
   ## Conclusion and possible improvements
   `rosrun rqt_graph rqt_graph`
+  The rqt graph is showing whole configuration of the assignemnt.
+![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/rqt_graph.png)
