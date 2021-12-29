@@ -158,6 +158,9 @@ int main (int argc, char **argv)
 ```	
 ![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/userInterfaceConfig.png)
   ## Conclusion and possible improvements
-  `rosrun rqt_graph rqt_graph`
-  The rqt graph is showing whole configuration of the assignemnt.
+  To sum it all up, I've controlled the robot in the given environment by using ROS functionalities and impplemented the concepts of nodes, topics, custom messages and custom services by particularly fousing on the assignemnt requirements. The whole conficuration of the system communication is shown in the rqt graph.
 ![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/rqt_graph.png)
+  To see the rqt graph in your system, you must need to run the node given below.
+  `rosrun rqt_graph rqt_graph`
+However, this is the first assignmnet that has been done by me on the ROS framework and I'm well aware of the ROS functionalities. Still, lots of improvements can be done. 
+- Firstly, The movement of the robot in the environment can be improved by developing more effective logic because the robot is facing a bit trouble while turning and search a lot. 
