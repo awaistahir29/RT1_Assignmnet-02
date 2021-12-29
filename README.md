@@ -92,8 +92,10 @@ This is the server node which takes the user request and send the response accor
 		}
   ```
   ### User node (second_assignment package)
-  This is the user interface node which talks with the user to input the command and give the response to the user node.
-	```cpp
+	This is the user interface node which talks with the user to input the command and give the response to the user node.
+	
+	
+```cpp
 int main (int argc, char **argv) 
 {
 	// Initialize the node, setup the NodeHandle 
@@ -147,7 +149,6 @@ int main (int argc, char **argv)
 
 	return 0;
 }
-	```
-
+```	
   ## Conclusion and possible improvements
   `rosrun rqt_graph rqt_graph`
