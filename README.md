@@ -157,6 +157,7 @@ int main (int argc, char **argv)
 	return 0;
 }
 ```	
+The red block in the rqt graph shoow the operation of the user interface. The UserInterface node is publishing the instructions to the message robotSpeed by using server that server is giving the incremented value to the to the basic speed or velocity variable of the robot which is resonsible for the accelaration of the robot. 
 ![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/userInterfaceConfig.png)
   ## Conclusion and possible improvements
   To sum it all up, I've controlled the robot in the given environment by using ROS functionalities and impplemented the concepts of nodes, topics, custom messages and custom services by particularly fousing on the assignemnt requirements. The whole conficuration of the system communication is shown in the rqt graph.
