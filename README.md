@@ -59,7 +59,7 @@ The nodes has the following aspects:
     - `camera_info (sensor_msgs/CameraInfo)`: camera calibration info.
 ![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/stageRosConfig.png)
   
-  ### robotController node (second_assignment package)
+### robotController node (second_assignment package)
   The robotContrioller node has two main tasks, the first is to move the robot inside the enviroment and second changes the velocity of the robot. These tasks are completed with the callback function and the main of the node. The `main()` initialise the node with the init() function and subscribes to different topics.
 - Subscriptions
   - `base_scan (sensor_msgs/Laser_scan)` which provides data about the laser that scans the surroundings of the robot.
