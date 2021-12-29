@@ -70,7 +70,7 @@ This is the server node which takes the user request and send the response accor
 - 'a' to accelerate.
 - 'd' to decelerate.
 - 'r' to reset the position of the robot inside the circuit.
-  ```cpp
+```cpp
   bool ServerCallback(second_assignment::speedRequest::Request &req, second_assignment::speedRequest::Response &res){
 
 	// If the input is 'a' or 'A' The speed of the robot wil increace.
@@ -89,13 +89,16 @@ This is the server node which takes the user request and send the response accor
 
 	if(req.in == 'r' || req.in == 'R'){
 		ros::service::call("/reset_positions", res_server);
-		}
-  ```
+}
+```
+	
   ### User node (second_assignment package)
-	This is the user interface node which talks with the user to input the command and give the response to the user node.
+This is the user interface node which talks with the user to input the command and give the response to the user node.
 	
 	
+
 ```cpp
+	
 int main (int argc, char **argv) 
 {
 	// Initialize the node, setup the NodeHandle 
