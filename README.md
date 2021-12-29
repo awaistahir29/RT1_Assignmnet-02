@@ -70,6 +70,8 @@ The nodes has the following aspects:
 	
 	![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/44ce0d3fd726b67dbfe3c908d5089f6c87baa1f4/simulations/robotControllerConfig.png)
 In thisi case, the red block represents the operations of the robotController node. It has subscribed the `base_scan` topic of the stageros node and `robotSpeed` message and publishing the velocity on the `cmd_vel geometry_msgs/Twist` which, in result, oving the robot in the evironment correctly.
+The controller logic flowchart is shown below.
+![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/main/simulations/FlowChart(Assignment%2302).png.png)
 ### server node (second_assignment package)
 This is the server node which takes the user request and send the response according to the user node's demand. 
 - 'a' to accelerate.
