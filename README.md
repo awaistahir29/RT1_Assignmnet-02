@@ -67,7 +67,7 @@ The nodes has the following aspects:
   - `cmd_vel geometry_msgs/Twist` which is the topic to change the linear and angular velocity's values of the robot.
 	##### rqt graph for the robotController Node
 	<p align="center">
-	<img =width="450" height="159"
+	<img ="https://github.com/awaistahir29/RT1_Assignmnet-02/blob/63e08af3ef2996a954dddcace11656e67528138d/simulations/robotControllerConfig.png"width="450" height="159"
 ### server node (second_assignment package)
 This is the server node which takes the user request and send the response according to the user node's demand. 
 - 'a' to accelerate.
