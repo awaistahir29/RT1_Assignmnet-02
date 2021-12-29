@@ -40,7 +40,7 @@ rosrun second_assignment user_node
 # Simulation
 ![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/44ce0d3fd726b67dbfe3c908d5089f6c87baa1f4/simulations/Robot_Simulation.png)
   
- ## Nodes and their logic
+## Nodes and their logic
 
 _Here I will explain each node code and tasks, to have a deeper description of the code, check the comments inside of it._
 
@@ -57,6 +57,7 @@ The nodes has the following aspects:
     - `image (sensor_msgs/Image)`: visual camera image.
     - `depth (sensor_msgs/Image)`: depth camera image.
     - `camera_info (sensor_msgs/CameraInfo)`: camera calibration info.
+![]()
   
   ### robotController node (second_assignment package)
   The robotContrioller node has two main tasks, the first is to move the robot inside the enviroment and second changes the velocity of the robot. These tasks are completed with the callback function and the main of the node. The `main()` initialise the node with the init() function and subscribes to different topics.
@@ -66,7 +67,8 @@ The nodes has the following aspects:
 - Publishing
   - `cmd_vel geometry_msgs/Twist` which is the topic to change the linear and angular velocity's values of the robot.
 	##### rqt graph for the robotController Node
-	![]("https://github.com/awaistahir29/RT1_Assignmnet-02/blob/63e08af3ef2996a954dddcace11656e67528138d/simulations/robotControllerConfig.png")
+	
+	![](https://github.com/awaistahir29/RT1_Assignmnet-02/blob/44ce0d3fd726b67dbfe3c908d5089f6c87baa1f4/simulations/robotControllerConfig.png)
 ### server node (second_assignment package)
 This is the server node which takes the user request and send the response according to the user node's demand. 
 - 'a' to accelerate.
