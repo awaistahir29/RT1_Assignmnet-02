@@ -59,8 +59,39 @@ The nodes has the following aspects:
     - `camera_info (sensor_msgs/CameraInfo)`: camera calibration info.
   
   ### robotController node (second_assignment package)
+  The robotContrioller node has two main tasks, the first is to move the robot inside the enviroment and second changes the velocity of the robot. These tasks are completed with the callback function and the main of the node. The `main()` initialise the node with the init() function and subscribes to different topics.
+- Subscriptions
+  - `base_scan (sensor_msgs/Laser_scan)` which provides data about the laser that scans the surroundings of the robot.
+  - `robotSpeed (second_assignment/robotSpeed)` which gives the speed to add to the base velocity.
+- Publishing
+  - `cmd_vel geometry_msgs/Twist` which is the topic to change the linear and angular velocity's values of the robot.
   ### server node (second_assignment package)
+This is the server node which takes the user request and send the response according to the user node's demand. 
+- 'a' to accelerate.
+- 'd' to decelerate.
+- 'r' to reset the position of the robot inside the circuit.
+  ```cpp
+  bool ServerCallback(second_assignment::speedRequest::Request &req, second_assignment::speedRequest::Response &res){
+
+	// If the input is 'a' or 'A' The speed of the robot wil increace.
+
+	if(req.in == 'a' || req.in == 'A'){
+		pos += 0.5;
+		}	
+	// If the input is 's', The speed of the robot will decreace.
+
+	if(req.in == 'd' || req.in == 'D'){
+		pos -= 0.5;
+		}
+
+	// If the input is 'r', the position of robot will reset 
+	// By calling reset serrvice
+
+	if(req.in == 'r' || req.in == 'R'){
+		ros::service::call("/reset_positions", res_server);
+		}
+  ```
   ### User node (second_assignment package)
-  
+  This is the user interface node which talks with the user to input the command and give the response to the user node.
   ## Conclusion and possible improvements
   `rosrun rqt_graph rqt_graph`
